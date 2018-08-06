@@ -79,7 +79,7 @@ nav a:hover {
     height: inherit;
     margin: 0 auto;
     background-image: url(img/hero-img.jpeg);
-    width: 1670px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -134,7 +134,11 @@ nav a:hover {
       text-align: center;
       margin-top: 20px;
       margin-bottom: 44px;
-  } 
+  }
+
+  .list-two {
+      margin: 0 100px;
+  }
 
   .bullet-point {
       display: flex;
@@ -144,7 +148,6 @@ nav a:hover {
       border-radius: 50%;
       padding-right: 7px;
       padding-left: 7px;
-      margin-right: 20px;
       border-color: #26AD4A;
       color: #26AD4A;
   }
@@ -154,14 +157,14 @@ nav a:hover {
       display: flex;
       justify-content: center;
       margin-left: auto;
-      margin-right: 27px;
+      margin-right: 7px;
       margin-top: 5px;
       margin-bottom: 5px;
   }
 
   .flex-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       height: 610px;
   }
 
@@ -181,7 +184,6 @@ nav a:hover {
   .content-font {
       font-size: 1.143em;
       margin-bottom: 40px;
-      margin-right: 180px;
   }
 
   .content-font-two {
@@ -192,21 +194,25 @@ nav a:hover {
     font-size: 18px;
   }
 
-  .grab-phone-screen {
+  .phone-wrapper {
       position: relative;
-      margin-left: 300px;
-      margin-top: 20px;
-      margin-right: 70px;
+      display: inline-block;
+  }
+
+  .grab-phone-screen {
+      position: absolute;
+      top: 71px;
+      left: 118px;
+      width: 52%;
+      z-index: 0;
   }
 
   .grab-phone {
-      position: absolute;
-      left: 155px;
-      top: 760px;
+      position: relative;
+      width: 420px;
   }
 
   .what-you-should-know {
-      margin-top: 83px;
       height: 392px;
       background: #26AD4A;
       display: flex;
@@ -254,7 +260,7 @@ nav a:hover {
     .speech-bubble {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 22px 30px;
-        margin: 90px 0px 12px 540px;
+        margin: 90px 0px 12px auto;
         max-height: 220px;
         position: relative;
         overflow: hidden;
@@ -273,7 +279,7 @@ nav a:hover {
     .arrow-right {
         height: 175px;
         width: 70px;
-        margin-right: 540px;
+        margin-right: auto;
         margin-top: 90px;
         border: none;
         background-color: rgba(0, 0, 0, 0.7);
@@ -365,7 +371,8 @@ nav a:hover {
         background-image: url(img/asset_18.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
+        padding: 80px 0;
         height: 398px;
     }
     
@@ -383,7 +390,6 @@ nav a:hover {
         font-weight: bold;
         letter-spacing: 0.05em;
         line-height: 1;
-        padding-top: 80px;
         margin-bottom: 48px;
     }
 
@@ -549,6 +555,7 @@ nav a:hover {
         width: 100%;
         color: white;
         max-height: 100px;
+        transition: all 0.4s;
     }
     
     .news-text {
@@ -566,8 +573,98 @@ nav a:hover {
         color: white;
         font-size: 16px;
     }
+    .center-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .viewmore {
+        height: 40px;
+        width: 200px;
+        background-color: #349AED;
+        color: white; 
+        border: 1px;
+        border-style: solid;
+        border-color: #349AED;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+    }
+    .footer {
+        width: 100%;
+        background-color: #26AD4A;
+        height: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    } 
+    
+    .grab-logo-white{
+        width: 100px;
+        margin-bottom: 20px;
+    }
 
+    .address {
+        max-width: 250px;
+    }
 
+    .footer-title {
+        color: White;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .footer-list li {
+        margin-bottom: 5px;
+    }
+
+    .liststyle {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .address-text {
+        color: white;
+    }
+
+    .liststyle:hover {
+        text-decoration: underline;
+    }
+
+    .social-media-separator {
+        width: 90%;
+        height: 2px;
+        border-color: lightgray;
+        margin-bottom: 60px;   
+    }
+
+    .social-media {
+        background-color: #26AD4A;
+        height: 300px;
+        color: white;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-media
+
+    .facebook {
+        background-color: white;
+        border-radius: 50%;
+        width: 48px;
+        margin-top: 30px;
+    }
 
 
 
